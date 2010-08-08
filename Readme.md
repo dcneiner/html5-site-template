@@ -12,18 +12,19 @@ It includes a few additional items by default:
   
 ## File Layout
 
-* `index.html`
-* `Readme.md` *(this file)*
-* `css/`  
-  * `layout.css` *(empty, just `@import`'s `reset.css`)*
-  * `reset.css`
-* `fonts/` *(empty, for storing web fonts)*
-* `images/` *(empty, for all site images)*
-* `js/`
-  * `site.js` *(I almost always need at least one script file, this gets me started)*
-  * `lib/` *(External libraries and plugins should go here)*
-    * `jquery-1.4.2.min.js`
-    * `modernizr-1.5.min.js`
+    index.html
+    Readme.md                     
+    css/  
+      - layout.css                // empty, just imports reset.css
+      - reset.css
+    fonts/                        // empty, for storing web fonts
+    images/                       // empty, for all site images
+    js/
+      - site.js                   // I almost always need at least one script
+                                  // file, this gets me started
+      - lib/                      // External libraries and plugins should go here
+          - jquery-1.4.2.min.js
+          - modernizr-1.5.min.js
 
 ## Using `.js` and `.no-js` helper classes
 
