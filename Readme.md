@@ -35,7 +35,7 @@ It includes a few additional items by default:
 
 ## Using `.js` and `.no-js` helper classes
 
-I use a convention in this template that starts the page load with a `no-js` class attached to `html`. The first `script` tag, however, does a replace, and changes `js` to `no-js`. You can save a few lines by just assigning the class vs. doing a replace, but I often add additional classes to the `html` class. In your CSS file, you can hide JS specific elements from non-JS enabled browsers or hide elements from browsers with JS enabled. By running this in the `head`, it changes up the page before it even renders, avoiding an awkward Flash of Unstyled Content (FOUS):
+I use a convention in this template that starts the page load with a `no-js` class attached to `html`. *(Update: Normally I have a snippet of code that does the swap from `no-js` to `js`, but thankfully Modernizr does this automatically if `no-js` exists!)* In your CSS file, you can hide JS specific elements from non-JS enabled browsers or hide elements from browsers with JS enabled. By running this in the `head`, it changes up the page before it even renders, avoiding an awkward Flash of Unstyled Content (FOUS):
 
     .no-js .collapsed { display: block; } /* Be sure blocks are hidden if JS is disabled */
     .js    .collapsed { display: none;  } /* With JS enabled, hide these blocks. They will be shown via JS */
