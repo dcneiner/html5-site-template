@@ -31,3 +31,16 @@ I use a convention in this template that starts the page load with a `no-js` cla
 
     .no-js .collapsed { display: block; } /* Be sure blocks are hidden if JS is disabled */
     .js    .collapsed { display: none;  } /* With JS enabled, hide these blocks. They will be shown via JS */
+    
+
+## Optional Generate Shell Script
+
+You can use the `site` file via the command line, like this:
+
+    ./site /path/to/new/site
+
+You may need to mark this script as executable before using it:
+
+    chmod +x site
+
+Finally, you can move this file to /usr/bin to use the `site` command from any directory. If you do this, be sure to uncomment the `cd ~/Development...` line and update the path to the location of this git repository on your local computer.
