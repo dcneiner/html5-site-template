@@ -28,7 +28,8 @@ time, mark, audio, video {
 }
 
 body {
-    line-height:1;
+    background-color: transparent; /* So color or background can be set on the html element */
+    line-height: 1;
 }
 
 article,aside,canvas,details,figcaption,figure,

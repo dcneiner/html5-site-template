@@ -1,2 +1,6 @@
 @import "reset.css";
 
+body {
+  font-size: 62.5%; /* Causes base font size to be ~10px */
+}
+
