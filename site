@@ -11,13 +11,13 @@
 # Finally, you can move this file to /usr/bin to use the `site`
 # command from any directory
 
-
 # Create the directory
-mkdir $1
+mkdir $1 &> /dev/null 
+FULL_PATH=`cd $1; pwd`
 
 # If you are moving the script from this directory
 # be sure to uncomment the next line, and change the path
 # cd ~/Development/html5-site-template
 
 # Run the actual export
-git archive master | tar -x -C $1
+git archive master | tar -x -C $FULL_PATH
