@@ -20,8 +20,7 @@ It includes a few additional items by default:
     fonts/                        // empty, for storing web fonts
     images/                       // empty, for all site images
     js/
-      - site.js                   // I almost always need at least one script
-                                  // file, this gets me started
+      - site.js                   // I almost always need at least one script file, this gets me started
       - lib/                      // External libraries and plugins should go here
           - jquery-1.4.2.min.js
           - modernizr-1.5.min.js
