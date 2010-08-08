@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# You can use this file via the command line, like this:
+#
+#   ./site /path/to/new/site
+#
+# You may need to mark this script as executable before using it:
+#
+#   chmod +x site
+#
+# Finally, you can move this file to /usr/bin to use the `site`
+# command from any directory
+
+
+# Create the directory
+mkdir $1
+
+# If you are moving the script from this directory
+# be sure to uncomment the next line, and change the path
+# cd ~/Development/html5-site-template
+
+# Run the actual export
+git archive master | tar -x -C $1
